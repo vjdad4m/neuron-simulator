@@ -309,7 +309,7 @@ export default function NeuronSimulator() {
                             dataKey="time"
                             type="number"
                             domain={['dataMin', 'dataMax']}
-                            tickFormatter={(value) => Math.floor(value)}
+                            tickFormatter={(value) => Math.floor(value).toString()}
                         />
                         <YAxis domain={[0, yMax]} scale={useLogScale ? 'sqrt' : 'auto'} />
                         <Tooltip />
